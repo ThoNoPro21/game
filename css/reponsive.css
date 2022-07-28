@@ -1,0 +1,246 @@
+@media (max-width:1150px){
+
+}
+@media (max-width:1000px){
+   
+    .container_giaodich{
+        display: none;
+    }
+    .header_right1{
+        top:60px;
+        margin: 0 1rem;
+    }
+    .form-napthe{
+        top: 130px;
+    }
+    .logo-right{
+        display: none;
+    }
+  
+}
+
+@media (max-width:768px){
+    .container_header{
+        width: auto;
+        min-height: 40vh;
+    }
+    /* .header{
+        overflow: hidden;
+        height: auto;
+    } */
+ 
+    Nav_LEFT{
+        width: 13rem;
+       
+    }
+
+   
+    .Nav .logo-head{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .Nav .logo-head img{  
+       width: 46px;
+       height: 46px;
+    }
+    .Nav .logo-right{
+        display: none;
+    }
+    .Nav li a{
+        padding: 0 14px;
+    }
+
+    .header_right1{
+        top:60px;
+    }
+    .slider{
+        height: 120px;
+    }
+    
+    
+    .form-napthe{
+        top:100px;
+    }
+    
+    .data_user select{
+        margin: 0;
+    }
+#menu_headerleft{
+    display: block;
+}
+
+/*---------------FORM-----------------*/
+.content {
+    padding-left: 15rem;
+}
+.content .box{
+    margin:0;
+}
+.chuthich {
+    font-size: 0.8rem;
+    padding: 20px 0;
+}
+
+
+/*---------------CONTACT---------------*/
+
+    .row-contact{
+      padding: 0 2rem;
+      width: auto;
+    }
+    .col-contact{
+      
+        width: 100%;
+    }
+  
+    .col-contact form{
+        width: 80%;
+    }
+    /* .col-contact input{
+        width:100%;
+    }  
+ */
+.box-item>h2, .mau{
+    display: none;
+}
+.list{
+    width: 166px;
+    min-width: 0;
+    height: 270px;
+    min-height: 270px;
+}
+
+}
+@media (max-width:400px)
+{
+    .container_header{
+        padding: 0;
+    }
+    .header{
+        padding-left: 0;
+    }
+    #header{
+      
+        overflow: hidden;
+    }
+    .form_heat{
+        position:static;
+      
+    }
+    .Nav .logo-head{
+        width: auto;
+    }
+    .Nav{
+        display: block;
+    }
+    .Nav li{
+        display: block;
+    }
+    .form-napthe{
+       top:80px;
+       left: 0;
+    }
+   
+    .Nav_LEFT{
+        display: none;
+    }
+
+    .header .menu-bar {
+        display: block;
+    }
+
+    #menu_headerleft{
+        left: 0;
+      
+    }
+    .content{
+        padding-left: 0;
+    }
+    .list{
+        width: 140px;
+        min-width: 140px;
+    }
+
+
+    .dangnhap .login{
+        width: 250px ;
+    }
+    .login{
+        width: 300px;
+    }
+    .login-body form{
+        padding: 0;
+    }
+
+    .bg_form-napthe{
+        left: 0;
+    }
+    .form-napthe{
+        width: auto;
+        margin: 0 2rem;
+    }
+    .lienhe {
+        position: fixed;
+        top: 450px;
+        right: 2px;
+        z-index: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .lienhe .lienhe-icon{
+        margin-left: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .lienhe .lienhe-chat{
+        padding: 0;
+    }
+ 
+    
+
+
+
+    .showForm-chat
+    {
+    left: 1.5rem;
+    }
+
+
+    .contact{
+        padding-left: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contact .contact_form{
+        margin: 0;
+    }
+    .col-contact1{
+        padding: 0;
+    }
+    .col-contact{
+        font-size: inherit;
+    }
+    .contact .contact_form>h3>span{
+        display: block;
+    }
+
+
+    footer{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    footer .cot{
+        width:auto;
+        padding-right: 0;
+    }
+    footer .cuoitrang p{
+        font-size: 14px;
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+}

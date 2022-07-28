@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>ShopTL</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/game.css">
+<link rel="stylesheet" href="./css/reponsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="shortcut icon" type="image/png" href="./logo/—Pngtree—business logo design free logo_915991.png"/>
+<meta charset ="UTF-8">
+</head>
+
+    <!--------------------------------------NAVIGITION----------------------------------------------->
+<body>
+    <div class="header">
+        <ul class="Nav"id="header">
+            <div class="logo-head">
+                <img src="../game/logo/—Pngtree—business logo design free logo_915991.png">
+                <h1 class="logo-head-text">TL</h1>
+            </div>
+
+            <div class="menu">
+                <li class="LI active"><a href="#">Trang chủ</a></li>
+             <!--    <li class="LI">
+                    <a href="#">Game
+                        <i class="fa fa-caret-down"></i></a>
+                            <ul class="row">
+               
+                                <ul class="colum">
+                                    <li><a href="#lol">Liên minh huyền thoại</a></li>
+                                    <li><a href="#fifa">FIFA</a></li>
+                                    <li><a href="#pubg">PUBG</a></li>
+                                </ul>
+               
+                                <ul class="colum">
+                                   <li><a href="#lienquan">Liên quân</a></li>
+                                   <li><a href="#ff">Free Fire</a></li>
+                                   <li><a href="#bb">BangBang</a></li>
+                               </ul>
+                            </ul>
+                </li> -->
+                <li class="LI" onclick="show_heart()"><a href="#">Yêu thích</a>
+                    <div class="form_heat">
+
+                    </div>
+
+                </li>
+                <li class="LI"><a href="#">Chính sách của shop</a></li>
+                
+                <li class="LI" onclick="shownapthe()">
+                        <a href="#"><i class="fa-solid fa-rotate"></i>
+                        Nạp thẻ</a>
+                </li>
+                <li class="LI">
+                    <a href="./dangnhap/dangnhap.html"><i class="fa-solid fa-user"></i>
+                   Đăng nhập</a>
+                </li>
+                <!-- <li class="LI"onclick="showFormm()"><a href="#"><i class="fa-solid fa-user"></i>Đăng kí</li></a> -->
+         
+            </div>  
+
+            <div class="logo-right">
+                <i class="fa-solid fa-gear" id="fa-gear"></i>
+                <div id="setting">
+                    <div div class="setting-1">
+                
+                        <i class="fa-solid fa-circle-user"><a href="./dangnhap/dangnhap.html"><p>Đăng nhập</p></i></a>
+                        
+                        <i class="fa-solid fa-user" ><a href="./dangki/dangki.html"><p>Đăng kí</p></i></a>
+                        
+                        <i class="fa-solid fa-gears"><p>Cài đặt</p></i>
+                        
+                        <i class="fa-solid fa-circle-question"><p>Trợ giúp</p></i>
+                        
+                        <i class="fa-solid fa-arrow-right-from-bracket"onclick="dangxuat()" id="dangxuatt"><p>Đăng xuất</p></i>
+                        
+                        <i class="fa-solid fa-person-walking-arrow-right " id="js-exit"><p>Thoát</p></i>
+                
+                        
+                    </div>
+                   
+  
+                </div>
+            </div>
+
+            <div class="menu-bar" id="menu-bar">
+                <i class="fa fa-bars" ></i>
+            </div>
+     
+        </ul>
+    </div>
+<!-- -----------------------------NAV_LEFT--------------------------------- -->
+   
+    <div class=tbody>
+    <div class="Nav_LEFT">
+        <div class="NavLEFT">
+        <ul class=data_user id="data_user1">
+            <h2 class="heading_data">Tài khoản</h2>
+           
+            <li style="cursor: pointer;">
+                <i class="fa-solid fa-user"></i>
+                <p onclick="nut_TT()">Thông tin đăng nhập</p>      
+            </li>   
+        </ul>
+
+    
+
+        <ul class=data_user1>
+            <h2 class="heading_data">Danh mục game</h2>
+                <ul class="colum">
+                    <!-- <li class="LII active"></li> -->
+                    <li><a href="#lol">Liên minh huyền thoại</a></li>
+                    <li><a href="#fifa">FIFA</a></li>
+                    <li><a href="#pubg">PUBG</a></li>
+                    <li><a href="#lienquan">Liên quân</a></li>
+                    <li><a href="#ff">Free Fire</a></li>
+                    <li><a href="#bb">BangBang</a></li>
+               </ul>   
+        </ul>
+        <ul class=data_user1>
+            <h2 class="heading_data">Mini game</h2>
+                <ul class="colum">
+                    <!-- <li class="LII active"></li> -->
+                    <li>Vòng quay may mắn</a></li>
+                    <li>Vòng quay Random</a></li>
+                    <li>Mở rương thần tài</a></li>
+                    
+               </ul>   
+        </ul>
+
+        <ul class=data_user2>
+            <h2 class="heading_data">Tìm kiếm - Bộ lọc</h2>
+                <p style="color:white">Giá</p>
+                <select>
+                    <option style="color: rgb(0, 0, 0);"value="1">Từ thấp đến cao</option> 
+                    <option style="color: rgb(0, 0, 0);" value="2">Từ cao đến thấp</option> 
+                </select>
+
+                <p style="color:white">Rank</p>
+                <select>
+                    <option style="color: rgb(0, 0, 0);"value="1">Vàng trở lên</option> 
+                    <option style="color: rgb(0, 0, 0);" value="2">Kim cương trở lên</option> 
+                </select>
+                <br>
+                <button style="margin-top: 10px;cursor: pointer;"type="submit">Tìm kiếm</button>
+
+            
+        </ul>
+   <!--     
+        <ul class=data_user>
+            <i class="fa-solid fa-do-not-enter" onclick="showheaderleft()"></i>
+        </ul> -->
+    </div>
+    </div>
+
+    <ul class=data_user id="menu_headerleft">
+        <i class="fa-solid fa-angles-right" onclick="showheaderleft()"></i>
+    </ul>
+    
+    <!----------------------------------------Thanhbar------------------------>
+
+    <div class="show__TTnhap" id="TTnhap" onload="showttnhap()">
+        <div class="show_user">
+            <img src="../game/logo/—Pngtree—business logo design free logo_915991.png"> 
+           
+        </div>
+       <div class="show_TT">
+       <span> Tài khoản :<label id="Taikhoan"></label> </span><br><br>
+  
+       <span> Email : <label id="Email"></label></span><br><br>
+       <span> Ngày sinh : <label  id="Ngaysinh"></label></span><br><br>
+       <span>Số dư :</span>
+       </div>
+        <div style="bottom: 0;position:absolute;margin: 2rem;
+        display: flex;"class="out">
+            <i class="fa-solid fa-arrow-right-from-bracket"id="dangxuatt"></i>
+            <p style="color:white;cursor: pointer;"onclick="dangxuat()" >Đăng xuẩt</p>
+        </div>
+    </div>
+
+     <!-------------------------------------FORMNAPTHE--------------------------------------------------------------->
+    <div class="header_right">
+    <div class="bg_form-napthe">
+        <div class="form-napthe">
+            <div class="form-napthe-1">
+                <h2>Nạp thẻ</h2>
+                <div style="position: absolute;right: 0;top:0;cursor: pointer;"class="close_napthe" onclick="hidenapthe()">
+                <i style="color: black;font-size: 1.5rem;padding: 10px;"class="fa-solid fa-xmark"></i></div>
+                <div class="nhapvao">
+                    <div class="napthe">
+                        <select name="" id="loaithe" >
+                            <option value="">-- Chọn loại thẻ --</option>
+                            <option value="Viettel">Viettel</option>
+                            <option value="Vinaphone">Vinaphone</option>
+                            <option value="Mobiphone">Mobiphone</option>
+                        </select>
+                    </div>    
+        
+        
+                    <div class="napthe">
+                        <select name="" id="loaithe1" >
+                            <option value="">-- Chọn mệnh giá --</option>
+                            <option value="10000">10.000đ</option>
+                            <option value="20000">20.000đ</option>
+                            <option value="50000">50.000đ</option>
+                        </select>
+                    </div> 
+
+                    <div class="napthe">
+                        <input type="number" id="loaithe" maxlength="16" placeholder="Số seri">  
+                    </div>
+
+                    <div class="napthe">
+                        <input type="number" id="loaithe" maxlength="16" placeholder="Mã số thẻ">
+                    </div>
+
+                    <div class="napthe">
+                        <button type="submit" id="btnnapthe" onclick="Napthe()">Nạp Thẻ</button=onclick=>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_header">
+    
+        <div class="header_right1">
+            <div class="prmyslider">      
+                <div class="myslider">
+                    <marquee id="marq" scrollamount="10" direction="left" Behavior="scroll" bgcolor ="yellow" scrolldelay="5" onmouseover="this.stop()" onmouseout="this.start()">
+                        <div class="slider fade">
+                            <a href="#lol">  <img src="./ảnh game/ảnh lmht/0 (1).jpg"></a>
+                            <a href="#lol">  <img src="./ảnh game/ảnh lmht/0 (2).jpg"></a>
+                            <a href="#lol">  <img src="./ảnh game/ảnh lmht/0 (3).jpg"></a>
+                            <a href="#lol">  <img src="./ảnh game/ảnh lmht/0.jpg"> </a>
+                            <a href="#lol">  <img src="./ảnh game/ảnh lmht/0 (4).jpg"></a>
+                        </div> 
+                    </marquee>
+                </div>
+            </div>
+                     <!------------------------------------------------------------------------------------------------------ -->
+            <div class="container_giaodich">
+               <h2 class="header_giaodich">
+                   <i class="fa-solid fa-clock"></i>
+                   Top nạp thẻ</h2>
+                   <table border="4" id="show_napthe">
+                    <thead>
+                        
+                            <tr><th>Loại thẻ</th>
+                            <th>Trị giá</th>
+                            <th>Ngày nạp</th>
+                            <th>ID</th>
+                           
+                        
+                   </thead>
+                </table>
+                   
+            
+                
+                   
+            </div>
+        </div>
+    
+    </div>
+    
+
+     <!-------------------------------------FORM-CHAT---------------------------------->
+    <div class="showForm-chat js-showForm-chat">
+        <ul class="Form-chat">
+            <ul class="avt-Form-chat">
+                 <li><img src="../game/logo/—Pngtree—business logo design free logo_915991.png"></li>
+            
+            </ul>
+            <ul class="Form-chat icons">
+                   <li><i class="fa-solid fa-circle-user"></i></li>
+                   <li><i class="fa-solid fa-ellipsis"></i></li>
+                   <li><i class="fa-solid fa-xmark js-close"></i></li>
+             </ul>
+        </ul>
+        
+        <div class="avt-Formchat">
+            <div class="avt-Formchat1">
+                <div class="avt-Formchat2">
+                <img src="./logo/—Pngtree—business logo design free logo_915991.png">
+                <span class="avt-Formchat3"></span>
+                </div>
+                <h2>Shop TL</h2>
+            </div>
+        </div>
+
+        <div class="text-p">
+            <p>Thường phản hồi trong vòng 1 giờ ?</p>
+        </div>
+
+        <div class="avt-user">
+            <div class="avt-user1">
+                <div></div>
+                    <img src="logo/—Pngtree—business logo design free logo_915991.png">
+                
+            </div>
+            <h2>Chào quý khách ! Chúng tôi có thể giúp gì cho bạn ?</h2>
+        </div>
+
+        <div class="rep-mess">
+            <div class="mess1"></div>
+            <div class="mess2"></div>
+            <div class="mess3"></div>
+            <div class="mess4"></div>
+        </div>
+        
+        <div id="show-text"></div>
+    
+        <div class="text-chat">
+            <div class="icons">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-camera"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+
+            <div class="mess-chat">
+                <input id="newtext"type="text">
+            </div>
+
+            <div class="icon-like">
+                <button id="btn" onclick="showtext()">
+                <i class="fa-solid fa-thumbs-up"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+
+     <!-----------------------------------MORE-------------------------->
+      
+    <div class="lienhe">
+        <div class="lienhe-icon">
+            <i class="fa-brands fa-facebook-messenger js-icon"></i>
+        </div>
+        <div class="lienhe-chat">
+            <i class="fa-solid fa-message"></i>
+            <p class="lh js-icon">Trò chuyện ngay !</p>
+            <a href="#header"><i class="fa-solid fa-angles-up" id="return_home"></i></a>
+        </div>
+    </div>
+
+     <!-----------------------------------NOIDUNG------------------------------------------------------------------>
+     <div class="content">
+         <div class="box">
+             <div class="box-item">
+               <h2 id="lol">Liên Minh Huyền Thoại</h2>
+               <div class="mau"></div>
+
+               <div class="box-item1">
+                    <div class="list">
+                        <div class="list_ma">
+                           
+                            <h2 class="headingma">Mã 01</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht-1">
+                                <li>Full skin yasuo</li>
+                                <li>Khung : Siêu Phẩm</li>
+                                <li>Trạng thái : Còn</li>
+                            </div>
+
+                        </div>
+                        <img src="./ảnh game/ảnh lmht/0 (1).jpg">
+                        
+                        <div class="chuthich">
+                            <p>1.390.000đ</p>
+                            <p>Số tướng:147</p>
+                            <p>Số trang phục:1000</p>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay </button>
+                                <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                          
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                       
+                    </div>
+
+
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 02</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht lmht-2">
+                                <li>Khung:Siêu phẩm</li>
+                                <li>Full skin Zed</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game/ảnh lmht/0 (2).jpg">
+                        <div class="chuthich">
+                            <p>1.899.000đ</p>
+                            <p>Số tướng:132</p>
+                            <p>Số trang phục:2147</p>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                        
+                    </div>
+
+
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 03</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht lmht-3">
+                                <li>Khung:Siêu phẩm</li>
+                                <li>Full skin Set</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game/ảnh lmht/0 (3).jpg">
+                        <div class="chuthich">
+                            <p>2.189.000đ</p>
+                            <p>Số tướng:152</p>
+                            <p>Số trang phục:3976</p>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                            
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                    </div>
+
+
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 04</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht lmht-4">
+                                <li>Khung:Siêu phẩm</li>
+                                <li>Full skin Ashe</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game/ảnh lmht/0 (4).jpg">
+                     <div class="chuthich">
+                            <p>1.999.000đ</p>
+                            <p>Số tướng:139</p>
+                            <p>Số trang phục:1932</p>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                            
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                    </div>
+
+              </div>
+             <!------------------------------------------------------------------------------------------------------------------------------------->
+              <h2 id="fifa">FiFA</h2>
+              <div class="mau"></div>
+               <div class="box-item2">
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 05</h2>
+                        </div>
+                        <div class="lmht"> 
+                            <div class="lmht-1">
+                                <li>Giá trị BP: 870 triệu</li>
+                                <li>GTĐH: 2 tỷ</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game//Fa/3f4ff78343089283a9b54ff8cee59015bandicam 2020-06-17 01-19-23-520.jpg">
+                        <div class="chuthich">
+                            <P>870 triệu BP trắng với trắng thông tin</P>
+                            <P>ATM:700.000đ</P>
+                            <P>Card: 850.000đ</P>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                            
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                    </div>
+                
+
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 06</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht-2">
+                                <li>Giá trị BP: 10 triệu</li>
+                                <li>GTĐH: 1,7 tỷ</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game//Fa/3f4ff78343089283a9b54ff8cee59015bandicam 2020-06-17 01-19-23-520.jpg">
+                        <div class="chuthich">
+                            <P>10 triệu BP trắng với trắng thông tin</P>
+                            <P>ATM:250.000đ</P>
+                            <P>Card: 350.000đ</P>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                            
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                    </div>
+                
+
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 07</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht-3">
+                                <li>Giá trị BP: 83 tỷ</li>
+                                <li>GTĐH: 121 tỷ</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game//Fa/1640274116x0.jpg">
+                        <div class="chuthich">
+                            <P>83 tỷ BP trắng với trắng thông tin</P>
+                           <P>ATM:3.950.000đ</P>
+                            <P>Card: 4.550.000đ</P>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                            
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                    </div>
+                
+
+                    <div class="list">
+                        <div class="list_ma">
+                            <h2 class="headingma">Mã 08</h2>
+                        </div>
+                        <div class="lmht">
+                            <div class="lmht-4">
+                                <li>Giá trị BP: 23 tỷ</li>
+                                <li>GTĐH: 80 tỷ</li>
+                                <li>Trạng thái: Còn</li>
+                            </div>
+                        </div>
+                        <img src="./ảnh game/Fa/1640274434x0.jpg">
+                        <div class="chuthich">
+                            <P>23 tỷ BP trắng với trắng thông tin</P>
+                            <P>ATM:2.600.000đ</P>
+                            <P>Card: 3.100.000đ</P>
+                        </div>
+                        <div class="buy">
+                            <button class="submit js-buys">Mua Ngay</button>
+                            <a href="/html/Skin/abc.html" target="_blank">
+                            <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                            
+                        </div>
+                        <button id="add_card">Yêu thích</button>
+                        <i class="fa-solid fa-heart" id="adds_card"></i>
+                    </div>
+                
+
+              </div>
+             <!---------------------------------------------------------------------------------------------------------------------------------->
+              <h2 id="pubg">PUBG</h2>
+              <div class="mau"></div>
+              <div class="box-item3">
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 09</h2>
+                    </div>
+                    <div class="lmht"> 
+                        <div class="lmht-1">
+                            <li>Skin súng: Godzilla AWM</li>
+                            <li>Loại Acc: Steam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div>
+                    <img src="./ảnh game/pubg/1.jpg.webp">
+                    <div class="chuthich">
+                        <p>Skin súng: 50</p>
+                        <p>Trang phục: 70</p>
+                        <p>Giá: 1.600.000đ</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                 </div>
+            
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 10</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-2">
+                            <li>Skin súng: Hellfire AKM</li>
+                            <li>Loại Acc: Steam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/pubg/2.jpg.jpg">
+                    <div class="chuthich">
+                        <p>Skin súng: 48</p>
+                        <p>Trang phục: 52</p>
+                        <p>Giá: 900.000đ</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 11</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-3">
+                            <li>Skin súng: Golden Trigger M416</li>
+                            <li>Loại Acc: Steam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/pubg/3.jpg.jpg">
+                    <div class="chuthich">
+                        <p>Skin súng: 48</p>
+                        <p>Trang phục: 52</p>
+                        <p>Giá: 900.000đ</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 12</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-4">
+                            <li>Skin súng: M416 Glacier</li>
+                            <li>Loại Acc: Steam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/pubg/4.jpg.jpg">
+                    <div class="chuthich">
+                        <p>Skin súng: 48</p>
+                        <p>Trang phục: 52</p>
+                        <p>Giá: 900.000đ</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                 </div>
+              </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------->
+            <h2 id="lienquan">LIÊN QUÂN</h2>
+             <div class="mau"></div>
+              <div class="box-item4">
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 13</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-1">
+                            <li>Ngộ Không Siêu Việt 2.0</li>
+                            <li>Bảng Ngọc: 8</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/ảnh lq/tải xuống (1).jpg">
+                    <div class="chuthich">
+                        <p>Rank: Cao thủ</p>
+                        <p>Giá:1.599.000đ</p>
+                        <p>Tướng: 52</p>
+                       <p>Trang phục: 53</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 14</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-2">
+                            <li>Nakroth Thứ nguyên vệ thần</li>
+                            <li>Bảng Ngọc: 7</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src=".//ảnh game/ảnh lq/tải xuống (2).jpg">
+                    <div class="chuthich">
+                        <p>Rank: Cao thủ</p>                 
+                        <p>Giá: 1.899.000đ</p>
+                        <p>Tướng: 62</p>
+                        <p>Trang phục: 56</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 15</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-3">
+                            <li>Murad Siêu Việt </li>
+                            <li>Bảng Ngọc: 8</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/ảnh lq//tải xuống.jpg">
+                    <div class="chuthich">
+                        <p>Rank: Thách đấu</p>
+                        <p>Giá:3.199.000đ</p>
+                        <p>Tướng: 86</p>
+                        <p>Trang phục: 226</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 16</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-4">
+                            <li>Butterfly Nữ Quái Nổi Loạn</li>
+                            <li>Bảng Ngọc: 8</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/ảnh lq//U6E4qdiFOY_1578476236.jpg">
+                    <div class="chuthich">
+                        <p>Rank: Cao thủ</p>
+                        <p>Giá:2.500.000đ</p>
+                        <p>Tướng: 83</p>
+                       <p>Trang phục: 130</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+             </div> 
+             <!----------------------------------------------------------------------------------------------------------------------------------->
+               <h2 id="ff">FREE FIRE</h2>
+              <div class="mau"></div>
+              <div class="box-item5">
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 17</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-1">
+                            <li>Pet: Có</li>
+                            <li>Skin súng: SCAR Đảng cấp Titan</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game//frefire/image-100152-ff-hahaha.jpg">
+                    <div class="chuthich">
+                        <p>Rank:Huyền thoại</p>
+                        <p>Giá:600.000đ</p>
+                        <p>Skin: Full AK</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 18</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-2">
+                            <li>Pet: Có</li>
+                            <li>Skin súng: AK47 Rồng Lửa</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game//frefire/thumb-100123-ff-hahaha.jpg">
+                    <div class="chuthich">
+                        <p>Rank:Thách đấu</p>
+                        <p>Giá:899.000đ</p>
+                       <p>Skin: Full Shotgun</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+                   
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 19</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-3">
+                            <li>Pet: Có</li>
+                            <li>Full skin súng AK</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game//frefire/tải xuống (1).jpg">
+                    <div class="chuthich">
+                        
+                        <p>Rank:Thách đấu</p>
+                        <p>Giá:2.199.000đ</p>
+                        <p>Skin: Full Skin Sky</p>
+
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 20</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-4">
+                            <li>Pet: Có</li>
+                            <li>Có bộ skin: Sakura Blossom</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game//frefire/tải xuống.jpg">
+                    <div class="chuthich">
+
+                       <p>Rank:Thách đấu</p>
+                       <p>Giá:2.199.000đ</p>
+                       <p>Skin: Full Skin Sky</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+             </div> 
+              <!-------------------------------------------------------------------------------------------------->
+              <h2 id="bb">BANGBANG</h2>
+              <div class="mau"></div>
+              <div class="box-item6">
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 21</h2>
+                    </div>
+                    <div class="lmht"> 
+                        <div class="lmht-1">
+                            <li>Thần Uy Long tướng lv6</li>
+                            <li>Có skin SSS kích hoạt khung cam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/bangbang/4diIisk.jpg">
+                    <div class="chuthich">
+                        <p>2.189.000đ</p>
+                        <p>Số tướng:152</p>
+                        <p>Số trang phục:3976</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 22</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-2">
+                            <li>Sát Thủ 3 lv6</li>
+                            <li>Có Skin SSS kích hoạt khung cam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/bangbang/4JKuy6z.jpg">
+                    <div class="chuthich">
+                        <p>2.189.000đ</p>
+                        <p>Số tướng:152</p>
+                        <p>Số trang phục:3976</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 23</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-3">
+                            <li>Holloow Ichigo lv6</li>
+                            <li>Có skin SSS kích hoạt khung cam</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/bangbang/JBAw9e1.jpg">
+                    <div class="chuthich">
+                        <p>2.189.000đ</p>
+                        <p>Số tướng:152</p>
+                        <p>Số trang phục:3976</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+                 <div class="list">
+                    <div class="list_ma">
+                        <h2 class="headingma">Mã 24</h2>
+                    </div>
+                    <div class="lmht">
+                        <div class="lmht-4">
+                            <li>Xe Noel lv6</li>
+                            <li>Có 2 skin kích hoạt khung tím</li>
+                            <li>Trạng thái: Còn</li>
+                        </div>
+                    </div> 
+                    <img src="./ảnh game/bangbang/ptymEh2.jpg">
+                    <div class="chuthich">
+                        <p>2.189.000đ</p>
+                        <p>Số tướng:152</p>
+                        <p>Số trang phục:3976</p>
+                    </div>
+                    <div class="buy">
+                        <button class="submit js-buys">Mua Ngay</button>
+                        <a href="/html/Skin/abc.html" target="_blank">
+                        <div class="buy_chitiet"><h2>Chi tiết</h2></div></a>
+                        
+                    </div>
+                    <button id="add_card">Yêu thích</button>
+                    <i class="fa-solid fa-heart" id="adds_card"></i>
+                  </div>
+              </div> 
+
+         </div>
+         </div>
+     </div>   
+      
+
+     <!--------------------------------------LOPPHU------------------------------------------------------------------>
+  
+    <div class="dangnhap js-dangnhap">
+        <div class="login">
+            <button class="login-close">
+                <i class="fa fa-remove"></i>
+            </button>
+
+            <header class="login-form">
+                <i class="fa fa-user"></i>
+                Login-Form
+            </header>
+
+               <div class="login-body"> 
+                  <form onsubmit="Login()"method="POST">
+                        <div class="input">
+                            <i style="position:absolute;color:black;float:left;line-height: 30px;font-size: 20px;"class="fa fa-user"></i>
+                            <input type="text"placeholder="Nhập tài khoản" id="ddname" required>
+                            <div class="mau"></div>
+                       </div>
+                       <div class="input">
+                         <i style="position:absolute;float:left;color:black;line-height: 30px;font-size: 20px" class="fa fa-lock"></i>
+                         <input type="password"placeholder="Mật khẩu" id="ddkhau" value=''required>
+                         <div class="mau"></div>
+                       </div> 
+                 
+                
+                        <div class="footer">
+                            <div class="btn">
+                                <button type="submit"> Login </button>
+                            </div>
+                            <div class="btn-icon">
+                                <i class="fa fa-facebook-square" ></i><a href="#"> Facebook</a>  -- <i class="fa fa-google"></i> <a href="#">Google</a>
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>  
+    <!-- ----------------------------------------------------------------ĐĂNG KÍ----------------------------- -->
+    <div class="dangki">
+        <div class="login">
+            <button class="login-closes">
+                <i class="fa fa-remove"></i>
+            </button>
+
+            <header class="login-form">
+                <i class="fa fa-user"></i>
+                Register-Form
+            </header>
+
+            <div class="login-body"> 
+               <form id="FORM"onsubmit="Register()" method="post">
+                     <div class="input">
+                        <i style="position:absolute;color:black;float:left;line-height: 30px;font-size: 20px;"class="fa fa-user"></i>
+                        <input type="text"placeholder="Nhập tài khoản" id="dname" value="" required>
+                        <div class="mau"></div>
+                    </div>
+                    <div class="input">
+                      <i style="position:absolute;float:left;color:black;line-height: 30px;font-size: 20px" class="fa fa-lock"></i>
+                      <input type="password"placeholder="Mật khẩu" id="dkhau" value="" required>
+                      <div class="mau"></div>
+                    </div> 
+              
+            
+                    <div class="footer">
+                        <div class="btn">
+                            <button>Register </button>
+                        </div>
+                        <div class="btn-icon">
+                           <i class="fa fa-facebook-square" ></i><a href="#"> Facebook</a>  -- <i class="fa fa-google"></i> <a href="#">Google</a>
+                        </div> 
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div> 
+<!-- --------------------------------------------CARD----------------------------------------------------------- -->
+    <div class="thanhtoan_game">
+<div class="iphone">
+    <i style="color: black;right: 0;position: absolute;padding: 10px;cursor: pointer;"class="fa-solid fa-xmark" id="close_thanhtoan"></i>
+    <header class="iphone_header">
+      <legend>Thanh toán</legend>
+    </header>
+  
+    <form action="#" class="form" method="POST">
+      <div class="adr">
+        <legend>STK Admin</legend>
+  
+        <div class="card">
+          <address>
+            Agribank: 2000211130251
+          </address>
+        </div>
+      </div>
+  
+      <fieldset>
+        <legend>Thẻ Thanh Toán</legend>
+  
+        <div class="form__radios">
+          <div class="form__radio">
+            <label for="visa">
+                <i class="fa-brands fa-cc-visa" id="icon_TT"></i>
+              Visa</label>
+            <input checked id="visa" name="payment-method" type="radio" />
+          </div>
+  
+          <div class="form__radio">
+            <label for="paypal">
+                <i class="fa-solid fa-apple-whole" id="icon_TT"></i>
+            Ví momo</label>
+            <input id="paypal" name="payment-method" type="radio" />
+          </div>
+  
+          <div class="form__radio">
+            <label for="mastercard"><i class="fa-solid fa-apple-whole" id="icon_TT"></i>Agribank</label>
+            
+            <input id="mastercard" name="payment-method" type="radio" />
+          </div>
+          <div class="form__radio">
+            <label for="paypal">
+                <i class="fa-solid fa-apple-whole" id="icon_TT"></i>
+           Thẻ cào</label>
+            <input id="paypal" name="payment-method" type="radio" />
+          </div>
+        </div>
+      </fieldset>
+  
+     
+      <div class="thanhtoan">
+        <button class="buy_game">Mua Ngay</button>
+      </div>
+    </form>
+  </div>
+    </div>
+  
+  
+   <!------------------------------------------GIAIDAP---------------------------------------------------------------->
+      
+ 
+    
+    </div>
+    </div>
+    <div class="Footer">
+    <div class="contact">
+        <div class="contact_form">
+        <h3 style="text-align:center;padding:20px;color:rgb(255, 255, 255)"><span style="color:yellow">LIÊN HỆ - ĐÓNG GÓP</span> Ý KIẾN CỦA BẠN</h3>
+        <div class="row-contact">
+          <div class="col-contact">
+            <div class="col-contact1">
+              <p><i class="fa fa-map-marker"></i>TÂY NGUYÊN UNIVERSITY</p>
+              <p><i class="fa fa-phone-square"></i>0935809011</p>
+              <p><i class="fa fa-envelope"></i>Thoopppo45@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-contact">
+              <form action="#">
+              <div class="row-2">
+                 <input type="text" id="name" placeholder="Tên">
+                 <input type="email" name="email" id ="Email" placeholder ="Điền gmail của bạn">
+              </div>
+
+              <div class="row-1">
+                 <input type="text" id="messenger" placeholder="Ý kiến">
+              </div>
+              <input type="submit" id="gui" value="Gửi" onclick="if(nhap()) alert('Email hop le'); else alert('Email khong hop le');" a href="#">
+            </form>
+          </div>
+        </div>
+       </div>
+    </div> 
+      <!-------------------------------------------FOOTER------------------------------------------------------------------>
+    <footer>
+        <div class="cuoitrang">
+            <div class="hang">
+                <div  class="cot">
+                    <h3 class="mauu" >
+                        Liên hệ
+                    </h3>
+                    <hr width="50%" align="left">
+                    <ul class="dstrongcot">
+                        <li>
+                        Mọi thắc mắc liên hệ A Thơ: <span style="color:yellow">0935809011</span></li>
+                        <li>Facebook: <a href="https://www.facebook.com/NoPro.2001">Thơ Đồ</a></li>
+                    </ul>
+                </div>
+                <div  class="cot">
+                    <h3 class="mauu">
+                        Dịch vụ khác
+                    </h3>
+                    <hr width="max-content  " align="left">
+                    <ul class="dstrongcot">
+                        <li>Khuyến mãi người yêu</li>
+                        <li>Khuyến mãi 50% ngày lễ</li>
+                    </ul>    
+                </div>
+            </div>
+            <hr width="98%">
+            <p>Copyright <span style="color:yellow">©</span> 2022 All right Reserved by <span style="color:yellow">Shop Acc</span></p>
+
+        </div>
+    </footer>
+    </div>
+</body>
+    <script src="../game/javascript/game.js"></script>
+    
+</html>
